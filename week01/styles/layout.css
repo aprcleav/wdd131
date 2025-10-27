@@ -55,3 +55,6 @@ footer {
     grid-column: 1 / 3;
     color: white;
 }
+
+/* look up how to get the aside to drop beneath the main when viewport is reduced */
+/* change fonts and color scheme */
