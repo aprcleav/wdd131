@@ -9,6 +9,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: "Outfit", Helvetica, sans-serif;
 }
 
@@ -33,23 +37,30 @@ header p{
     font-family: var(--heading-font);
 }
 
+nav {
+    background: var(--nav-color);
+    margin: 0 auto;
+}
 nav ul {
-    text-align: center;
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    background: var(--nav-color);
-    align-items: center;
 }
 
-nav li {
-    flex: auto;
-    padding: 1rem;
+nav ul li {
+    flex: 1 0 auto;
 }
 
 nav a {
+    display: block;
     color: white;
     text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 main {
