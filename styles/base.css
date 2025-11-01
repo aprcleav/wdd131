@@ -160,11 +160,11 @@ figcaption {
     padding: 1rem;
 }
 
-.resources ul li a {
+.resources a, .location a {
     color: #000;
 }
 
-.resources ul li a:hover {
+.resources a:hover, .location a:hover {
     color: var(--green-color);
 }
 
