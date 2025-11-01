@@ -50,7 +50,9 @@ header p{
 nav {
     background: var(--dark-grey-color);
     margin: 0 auto;
+    color:#fff;
 }
+
 nav ul {
     display: flex;
     list-style: none;
