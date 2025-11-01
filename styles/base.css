@@ -161,6 +161,10 @@ figcaption {
     padding: 1rem;
 }
 
+.resources ul li {
+    padding: .5rem 0;
+}
+
 .resources a, .location a {
     color: #000;
 }
