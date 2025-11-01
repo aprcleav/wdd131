@@ -126,7 +126,8 @@ main h1 {
 .profile {
     width: 180px;
     border-radius: 50%;
-    padding: 1rem;
+    margin: 1rem;
+    border: 10px solid var(--blue-color);
 }
 
 .about p, figure {
