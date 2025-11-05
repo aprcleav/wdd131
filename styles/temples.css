@@ -1,10 +1,8 @@
 /* color scheme */
 :root {
     --tiffany-blue: #a9ddd6;
-    --slate-grey: #7a8b99;
     --mimi-pink: #f7d6e0;
     --raisin-black: #1a1423;
-    --space-cadet: #34344a;
 }
 
 * {
