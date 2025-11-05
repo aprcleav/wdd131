@@ -69,7 +69,6 @@ nav li {
 
 .open li {
     display: block;
-    grid-column: span 2;
 }
 
 nav a {
