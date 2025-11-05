@@ -1,0 +1,32 @@
+/* larger screens */
+@media (min-width: 500px) {
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+}
+
+@media (min-width: 700px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
+    
+}
