@@ -110,6 +110,10 @@ figure {
     margin: 0 auto;
 }
 
+figure img {
+    width: 200px;
+}
+
 figcaption {
     text-align: center;
 }
