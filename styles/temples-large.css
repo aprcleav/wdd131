@@ -1,11 +1,5 @@
 /* larger screens */
-@media (min-width: 500px) {
-    main {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-}
-
-@media (min-width: 700px) {
+@media (min-width: 600px) {
     header {
         display: flex;
         align-items: center;
