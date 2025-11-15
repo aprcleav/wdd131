@@ -1,10 +1,11 @@
-/* Blue and white colors match the Scottish flag */
+/* Colors match the photo. Scottish flag colors had contrast issues. */
 
 :root {
-    --blue-color: #005EB9;
+    --blue-color: #29506D;
     --white-color: #FFFFFF;
-    --light-color: #e3eff8;
+    --green-color: #5B7B78;
     --text-color: #060B20;
+    --background-color: #ffffffc2;
     --base-padding: 1rem;
 }
 
@@ -17,7 +18,7 @@
 /* Small screens */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lexend", Helvetica, sans-serif;
     color: var(--text-color);
     max-width: 1200px;
     margin: 0 auto;
@@ -27,7 +28,7 @@ header {
     text-align: center;
     padding: var(--base-padding);
     background-color: var(--blue-color);
-    border-bottom: 10px solid var(--white-color);
+    border-bottom: 10px solid var(--green-color);
     color: var(--white-color);
 }
 
@@ -40,6 +41,7 @@ h2 {
     background-color: var(--blue-color);
     padding: var(--base-padding);
     color: var(--white-color);
+    border-bottom: 5px solid var(--green-color);
 }
 
 .hero img {
@@ -51,13 +53,17 @@ h2 {
     position: absolute;
     top: 20px;
     right: 0px;
-    background-color: var(--light-color);
+    background-color: var(--background-color);
     padding: .5rem;
     font-size: 12px;
     font-style: italic;
 }
 
 .attribution a {
+    color: var(--text-color);
+}
+
+.attribution a:hover {
     color: var(--blue-color);
 }
 
@@ -70,7 +76,7 @@ h2 {
 }
 
 .label {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 section p {
@@ -93,7 +99,7 @@ footer {
 @media (min-width: 700px) {
 
     .data, .weather {
-        background-color: #ffffffc2;
+        background-color: var(--background-color);
         padding-top: 90px;
     }
 
