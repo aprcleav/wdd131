@@ -1,8 +1,8 @@
-/* Use an emoticon or equivalent for the weather icon ⛅ in the wider view by the "Weather" heading. */
+/* Blue and white colors match the Scottish flag */
 
 :root {
-    --blue-color: #204868;
-    --green-color: #40645A;
+    --blue-color: #005EB9;
+    --white-color: #FFFFFF;
     --light-color: #e3eff8;
     --text-color: #060B20;
     --base-padding: 1rem;
@@ -27,8 +27,8 @@ header {
     text-align: center;
     padding: var(--base-padding);
     background-color: var(--blue-color);
-    border-bottom: 10px solid var(--green-color);
-    color: #fff;
+    border-bottom: 10px solid var(--white-color);
+    color: var(--white-color);
 }
 
 main {
@@ -37,9 +37,9 @@ main {
 
 h2 {
     margin-bottom: 1rem;
-    background-color: var(--green-color);
+    background-color: var(--blue-color);
     padding: var(--base-padding);
-    color: #fff;
+    color: var(--white-color);
 }
 
 .hero img {
@@ -57,12 +57,16 @@ h2 {
     font-style: italic;
 }
 
+.attribution a {
+    color: var(--blue-color);
+}
+
 .data, .weather {
     margin: 0 auto;
     text-align: center;
     width: 100%;
     padding: 0 0 1rem 0;
-    border: var(--green-color) solid 1px;
+    border: var(--blue-color) solid 1px;
 }
 
 .label {
@@ -82,7 +86,7 @@ footer {
     background: var(--blue-color);
     padding: 2rem;
     text-align: center;
-    color: #fff;
+    color: var(--white-color);
 }
 
 /* larger screens */
@@ -90,18 +94,19 @@ footer {
 
     .data, .weather {
         background-color: #ffffffc2;
+        padding-top: 90px;
     }
 
     .data {
         position: absolute;
         bottom: 20px;
-        left: 10px;
+        left: 20px;
         width: 400px;
     }
 
     .weather {
         position: absolute;
-        top: 60px;
+        top: 70px;
         width: 250px;
         right: 10px;
     }
@@ -112,6 +117,13 @@ footer {
     
     .weather h2::after {
         content: " 🌥️"
+    }
+
+    h2 {
+        width: 100%;
+        position: absolute;
+        top:10px;
+        left: -10px;
     }
 
 
