@@ -1,0 +1,131 @@
+/* Use an emoticon or equivalent for the weather icon ⛅ in the wider view by the "Weather" heading. */
+
+:root {
+    --blue-color: #204868;
+    --green-color: #40645A;
+    --light-color: #e3eff8;
+    --text-color: #060B20;
+    --base-padding: 1rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Small screens */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: var(--base-padding);
+    background-color: var(--blue-color);
+    border-bottom: 10px solid var(--green-color);
+    color: #fff;
+}
+
+main {
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: 1fr;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    background-color: var(--green-color);
+    padding: var(--base-padding);
+    color: #fff;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    background-color: var(--light-color);
+    padding: .5rem;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.data, .weather {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding: 0 0 1rem 0;
+    border: var(--green-color) solid 1px;
+}
+
+.label {
+    font-weight: 600;
+}
+
+section p {
+    padding: .5rem;
+}
+
+.icon {
+    margin: 1rem;
+}
+
+footer {
+    background: var(--blue-color);
+    padding: 2rem;
+    text-align: center;
+    margin: 1rem 0 0;
+    color: #fff;
+}
+
+/* larger screens */
+@media (min-width: 600px) {
+
+    main {
+        grid-template-columns: 400px 1fr 250px;
+        grid-template-rows: 1fr 1fr;
+        place-items: center;
+    }
+
+    .hero {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        z-index: -1;
+    }
+    .data, .weather {
+        background-color: #ffffffc2;
+    }
+
+    .data {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 1rem;
+    }
+
+    .weather {
+        grid-column: 3/4;
+        grid-row:1/2;
+    }
+
+    .icon {
+        display: none;
+    }
+    
+    .weather h2 {
+        content: "Weather 🌥️"
+    }
+
+}
