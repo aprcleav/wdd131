@@ -32,9 +32,7 @@ header {
 }
 
 main {
-    display: grid;
-    grid-gap: .5rem;
-    grid-template-columns: 1fr;
+    position: relative;
 }
 
 h2 {
@@ -44,10 +42,6 @@ h2 {
     color: #fff;
 }
 
-.hero {
-    position: relative;
-}
-
 .hero img {
     width: 100%;
     height: auto;
@@ -55,7 +49,7 @@ h2 {
 
 .attribution {
     position: absolute;
-    bottom: 20px;
+    top: 20px;
     right: 0px;
     background-color: var(--light-color);
     padding: .5rem;
@@ -84,48 +78,42 @@ section p {
 }
 
 footer {
+    
     background: var(--blue-color);
     padding: 2rem;
     text-align: center;
-    margin: 1rem 0 0;
     color: #fff;
 }
 
 /* larger screens */
-@media (min-width: 600px) {
+@media (min-width: 700px) {
 
-    main {
-        grid-template-columns: 400px 1fr 250px;
-        grid-template-rows: 1fr 1fr;
-        place-items: center;
-    }
-
-    .hero {
-        grid-column: 1/-1;
-        grid-row: 1/-1;
-        z-index: -1;
-    }
     .data, .weather {
         background-color: #ffffffc2;
     }
 
     .data {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        margin: 1rem;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        width: 400px;
     }
 
     .weather {
-        grid-column: 3/4;
-        grid-row:1/2;
+        position: absolute;
+        top: 60px;
+        width: 250px;
+        right: 10px;
     }
 
     .icon {
         display: none;
     }
     
-    .weather h2 {
-        content: "Weather 🌥️"
+    .weather h2::after {
+        content: " 🌥️"
     }
+
+
 
 }
