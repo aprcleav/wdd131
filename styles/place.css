@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 
-/* Small screens */
+/* Smaller screens */
 
 body {
     font-family: "Lexend", Helvetica, sans-serif;
@@ -131,7 +131,5 @@ footer {
         top:10px;
         left: -10px;
     }
-
-
 
 }

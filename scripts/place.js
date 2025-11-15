@@ -5,6 +5,7 @@ const today = new Date();
 year.innerHTML = today.getFullYear();
 document.getElementById("lastModified").innerHTML = document.lastModified;
 
+// Calculate wind chill
 let temp = 5.5;
 let windSpeed = 33.7;
 
