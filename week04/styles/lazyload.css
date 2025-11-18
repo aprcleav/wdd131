@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    animation: fade 10s;
+}
+
+.overlay {
+    background: black;
+    width: 400px;
+    height: 600px;
+}
+
+@keyframes fade {
+    0% { 
+        opacity: 0; 
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
