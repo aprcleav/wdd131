@@ -128,7 +128,7 @@ h3 {
     padding: 1rem 0 1rem;
     text-align: center;
     background-color: var(--raisin-black);
-    color: #ffffff;
+    color: hsl(0, 0%, 100%);
 }
 
 .label {
