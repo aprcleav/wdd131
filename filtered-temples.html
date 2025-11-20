@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Picture Album</title>
+    <meta name="description" content="Responsive LDS Temples Picture Album designed for WDD131 - Dynamic Web Fundamentals class at BYU-Idaho.">
+    <meta name="author" content="April Cleaver">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@400;700;800&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="temple">Temple Album</h1>
+        <button id="menu" aria-label="navigation menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="active">Home</h2>
+        <div class="res-grid">
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> April Cleaver | Washington, USA </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* larger screens */
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
+    
+}
