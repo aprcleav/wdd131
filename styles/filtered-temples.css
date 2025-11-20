@@ -114,7 +114,6 @@ main {
 }
 
 section {
-    width: 100%;
     background-color: var(--card-color);
 }
 

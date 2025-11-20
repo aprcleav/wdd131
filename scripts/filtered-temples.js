@@ -70,8 +70,7 @@ const temples = [
         location: "Moses Lake, Washington, United States",
         dedicated: "2023, September, 17",
         area: 28933,
-        imageUrl:
-            "https://www.churchofjesuschrist.org/imgs/870578c5fa6f11edb2e2eeeeac1e709e84598271/full/640%2C/0/default"
+        imageUrl: "https://www.churchofjesuschrist.org/imgs/870578c5fa6f11edb2e2eeeeac1e709e84598271/full/500%2C/0/default"
     },
     {
         templeName: "Dallas Texas",
@@ -79,7 +78,7 @@ const temples = [
         dedicated: "1984, October, 19-24",
         area: 44207,
         imageUrl:
-            "https://www.churchofjesuschrist.org/imgs/c853d3386e74f389bb61d29d08feb2243aedde77/full/640%2C/0/default"
+            "https://www.churchofjesuschrist.org/imgs/c853d3386e74f389bb61d29d08feb2243aedde77/full/500%2C/0/default"
     },
     {
         templeName: "Frankfurt Germany",
@@ -87,7 +86,7 @@ const temples = [
         dedicated: "1987, August, 28-30",
         area: 32895,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/frankfurt-germany-temple/frankfurt-germany-temple-38924-main.jpg"
+            "https://churchofjesuschrist.org/imgs/53cd8f853566e3d1fbb7a7619801ff4481dba7a6/full/500%2C/0/default"
     },
     {
         templeName: "Kirtland Ohio",
@@ -95,7 +94,7 @@ const temples = [
         dedicated: "1836, March, 27",
         area: 15000,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/kirtland-temple/kirtland-temple-1275-main.jpg"
+            "https://www.churchofjesuschrist.org/imgs/cpgqik2ds9fs8ktmxxzoruxy5863bwhtycp1vtvt/pct:0,7.8,100,84.5/!1000%2C563/0/default"
     }
 ];
 
