@@ -109,30 +109,32 @@ const smallLink = document.querySelector("#small");
 
 homeLink.addEventListener("click", () => {
     createTempleCard(temples);
+    let heading = document.querySelector(".active");
+    heading.textContent = "Home";
 });
 
 oldLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => temple.dedicated.startsWith("18")));
     let heading = document.querySelector(".active");
-    heading.textContent = "Old"
+    heading.textContent = "Old";
 });
 
 newLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => temple.dedicated.startsWith("2")));
     let heading = document.querySelector(".active");
-    heading.textContent = "New"
+    heading.textContent = "New";
 });
 
 largeLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => temple.area > 90000));
     let heading = document.querySelector(".active");
-    heading.textContent = "Large"
+    heading.textContent = "Large";
 });
 
 smallLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => temple.area < 10000));
     let heading = document.querySelector(".active");
-    heading.textContent = "Small"
+    heading.textContent = "Small";
 });
 
 // Creates and populates temple cards from temple objects
