@@ -45,6 +45,7 @@ h3 {
 
 img {
     padding-top: .5rem;
+    box-shadow: 1px 1px 5px#161019;
 }
 
 .headings {
@@ -59,11 +60,13 @@ img {
 
 .wireframes {
     display: grid;
+    grid-gap: 1rem;
     grid-template-columns: 1fr;
 }
 
 .wireframes img {
     margin: 0 auto;
+
 }
 
 .wireframes h2 {
