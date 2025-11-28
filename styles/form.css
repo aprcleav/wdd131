@@ -89,6 +89,10 @@ legend {
     bottom: 5px;
 }
 
+.stars label:hover {
+    color: var(--blue-color);
+}
+
 .stars input:checked ~ label:before {
     content: '\2605';
 }
