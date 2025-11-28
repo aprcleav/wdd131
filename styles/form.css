@@ -24,6 +24,7 @@ h1 {
 }
 
 /* ------ FORM ------ */
+/*indicates required field*/
 main{
     max-width: 800px;
 }
@@ -31,6 +32,11 @@ main{
 main p {
     padding-top: 1rem;
     text-align: center;
+}
+.required {
+    color: var(--orange-color);
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 form {
@@ -40,6 +46,7 @@ form {
     padding: 1rem 0;
 }
 
+/*labels & legends*/
 fieldset {
     border: none;
 }
@@ -52,14 +59,17 @@ legend {
 label {
     display: block;
 }
-.required {
-    color: var(--orange-color);
-    font-size: 1.3rem;
-    font-weight: 600;
-}
+
 .em {
     font-style:italic;
 }
+/*stars*/
+.stars {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*input fields*/
 
 input[type="date"],
 input[type="text"],
