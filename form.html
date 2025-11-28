@@ -23,7 +23,7 @@
             <fieldset>
                 <legend><span class="required">*</span> Product Name</legend>
                 <label for="products"></label>
-                <select id="products" name="products" required>
+                <select id="products" name="products" required aria-label="products">
                         <option value="" disabled selected>Select a Product...</option>
                     </select>
             </fieldset>
@@ -45,7 +45,7 @@
             <fieldset>
                 <legend><span class="required">*</span> Date of Installation</legend>
                 <label for="date"></label>
-                <input type="date" id="date" name="date" required>
+                <input type="date" id="date" name="date" aria-label="date" required>
             </fieldset>
             <fieldset>
                 <legend>Which features did you find useful in the product? <span class="em">(Check all that apply)</span></legend>
@@ -67,7 +67,7 @@
             <fieldset>
                 <legend>Your Name</legend>
                 <label for="name"></label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" aria-label="name">
             </fieldset>
             <input type="submit" value="Post My Review">
         </form>

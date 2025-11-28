@@ -1,5 +1,5 @@
 :root {
-    --orange-color: #E07A5F;
+    --orange-color: #b45135;
     --blue-color: #666daa;
     --light-color: #F4F1DE;
     --text-color: #1D1D1E;
@@ -103,7 +103,6 @@ textarea
 height: 45px;
 font-family: "Montserrat", Helvetica, sans-serif; 
 font-size: 1rem;
-color: grey;
 border-radius: 10px;
 }
 
@@ -132,8 +131,7 @@ input[type="submit"] {
     border: none;
     border-radius: 10px;
     font-size: 1rem;
-    color: var(--text-color);
-    font-weight: 600;
+    color: white;
 }
 
 input[type="submit"]:hover {
