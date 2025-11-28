@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W5 Product Review Form</title>
+    <meta name="description" content="Week 5 Product Review Form Assignment for WDD131 at BYU-Idaho">
+    <meta name="author" content="April Cleaver">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <p><span class="required">*</span> Indicates required field.</p>
+        <form action="review.html" method="get">
+            <fieldset>
+                <legend><span class="required">*</span> Product Name</legend>
+                <label><select id="products" name="products" required>
+                        <option value="" disabled selected>Select a Product...</option>
+                    </select></label>
+            </fieldset>
+            <fieldset>
+                <legend><span class="required">*</span> Overall Rating</legend>
+                <div class="stars">
+                    <label><input type="radio" id="onestar" name="stars" value="⭐" required> ⭐</label>
+                    <label><input type="radio" id="twostar" name="stars" value="⭐⭐" required> ⭐⭐</label>
+                    <label><input type="radio" id="threestar" name="stars" value="⭐⭐⭐" required> ⭐⭐⭐</label>
+                    <label><input type="radio" id="fourstar" name="stars" value="⭐⭐⭐⭐" required> ⭐⭐⭐⭐</label>
+                    <label><input type="radio" id="fivestar" name="stars" value="⭐⭐⭐⭐⭐" required> ⭐⭐⭐⭐⭐</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><span class="required">*</span> Date of Installation</legend>
+                <label><input type="date" id="date" name="date" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Which features did you find useful in the product? <span class="em">(Check all that apply)</span></legend>
+                <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" id="ease" name="ease" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+                <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review</legend>
+                <textarea id="writtenreview" name="writtenreview" rows="4" placeholder="Type your review here..."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Your Name</legend>
+                <input type="text" id="name" name="name">
+            </fieldset>
+            <input type="submit" value="Post My Review">
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> April Cleaver | Washington, USA </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
