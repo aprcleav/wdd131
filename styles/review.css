@@ -29,8 +29,10 @@ h1 {
     padding: 1rem;
 }
 
+/* ------ MAIN ------ */
+
 main p {
-    padding: 100px;
+    padding: 100px 100px 50px;
     text-align: center;
     font-size: 1.5rem;
 }
@@ -41,11 +43,33 @@ main p {
     font-size: 3rem;
 }
 
+button {
+    background: var(--orange-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    display: block;
+    margin: 0 auto;
+    font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: var(--blue-color);
+    color: var(--light-color);
+}
+
 /* ------ FOOTER ------ */
 footer {
     background-color: var(--light-color);
     padding: 1rem;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 100px;
 }
 

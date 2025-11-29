@@ -75,7 +75,7 @@ legend {
     display: none;
 }
 
-.stars > label {
+.stars label {
     width: 50px;
     height: 50px;
     font-family: "Montserrat", Helvetica, sans-serif;
@@ -93,7 +93,8 @@ legend {
     color: var(--blue-color);
 }
 
-.stars input:checked ~ label:before {
+/*make sure all preceding stars are filled in when clicked*/
+.stars input:checked ~ label:before { 
     content: '\2605';
 }
 
