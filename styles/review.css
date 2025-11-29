@@ -1,0 +1,51 @@
+:root {
+    --orange-color: #b45135;
+    --blue-color: #666daa;
+    --light-color: #F4F1DE;
+    --text-color: #1D1D1E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid var(--light-color);
+}
+/* ------ HEADER ------ */
+header {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    background-color: var(--light-color);
+    padding: 1rem;
+}
+
+main p {
+    padding: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.numreviews {
+    display: block;
+    color: var(--orange-color);
+    font-size: 3rem;
+}
+
+/* ------ FOOTER ------ */
+footer {
+    background-color: var(--light-color);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+

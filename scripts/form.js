@@ -1,10 +1,3 @@
-// ---------------------- FOOTER -------------------------
-const year = document.querySelector("#currentyear");
-const today = new Date();
-
-year.innerHTML = today.getFullYear();
-document.getElementById("lastModified").innerHTML = document.lastModified;
-
 // ---------------------- FORM ---------------------------
 
 // Array of product objects
@@ -52,3 +45,10 @@ function populateProducts(products) {
         newProduct.appendChild(option);
     })
 }
+
+// ---------------------- FOOTER -------------------------
+const year = document.querySelector("#currentyear");
+const today = new Date();
+
+year.innerHTML = today.getFullYear();
+document.getElementById("lastModified").innerHTML = document.lastModified;
