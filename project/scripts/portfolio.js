@@ -88,7 +88,7 @@ realisticLink.addEventListener("click", () => {
 });
 
 whimsicalLink.addEventListener("click", () => {
-    createArtCard(artworks.filter(artwork => artwork.style.startsWith("w")));
+    createArtCard(artworks.filter(artwork => artwork.style == "whimsical"));
 });
 
 // Creates and populates art cards from artwork objects
@@ -101,7 +101,7 @@ function createArtCard(filteredArtworks) {
 
         name.textContent = artwork.name;
         img.setAttribute("src", artwork.image);
-        img.setAttribute("alt", `${artwork.name}, ${artwork.style} ipad illustration`);
+        img.setAttribute("alt", `'${artwork.name}', a ${artwork.style} ipad illustration`);
         img.setAttribute("loading", "lazy");
 
         card.appendChild(img);
