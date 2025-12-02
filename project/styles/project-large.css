@@ -1,0 +1,53 @@
+/* larger screens */
+@media (min-width: 720px) {
+    body {
+        box-shadow: 0px 0px 10px var(--darkest-color);
+    }
+    /* ----- HEADER ----- */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+        font-size: 16px;
+    }
+
+    /* ----- MAIN ----- */
+    .hero {
+        position: relative;
+    }
+
+    .cta {
+        position: absolute;
+        top: 50%;
+        left: 7%;
+        width: 85%;
+        /* font-size: 1.3rem; */
+    }
+
+    .shortbio {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+   .shortbio img {
+    padding: 1rem .5rem 0 1.5rem;
+   }
+
+}

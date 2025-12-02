@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 Project: Artist Portfolio Website</title>
+    <meta name="description"
+        content="An artist portfolio website created by April cleaver for WDD131 - Dynamic Web Fundamentals at BYU-Idaho">
+    <meta name="author" content="April Cleaver">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,600&family=Poppins:wght@400;800&display=swap"
+        rel="stylesheet">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo-small.webp" alt="April Cleaver Illustration logo">
+        <h1>April Cleaver Illustration</h1>
+        <button id="menu" aria-label="navigation menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <picture class="heroimg">
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 700px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Woman sitting on a couch using an ipad to draw a portrait"
+                    width="500" height="300" fetchpriority="high">
+            </picture>
+            <div class="cta">
+                <h2 class="quote">"The desire to create is one of the deepest yearnings of the human soul."</h2>
+                <p class="citation">Dieter F. Uchtdorf</p>
+                <a id="explore" href="portfolio.html">Explore April's Creations</a>
+            </div>
+        </section>
+        <section class="shortbio">
+            <picture class="heroimg">
+                <source media="(min-width: 700px)" srcset="images/ac-cartoon-medium.webp">
+                <img src="images/ac-cartoon-small.webp" alt="Cartoon drawing of a woman playing a ukulele" width="500"
+                    height="300" loading="lazy">
+            </picture>
+            <div class="bio">
+                <p>Tucked away in the misty forests of the Pacific Northwest, April Cleaver spends most days sketching on an iPad and turning everyday adventures into colorful illustrations. When not drawing, she's probably hiking a trail, making
+                questionable sounds on a new musical instrument, or laughing with family. Her art is fueled by curiosity, a love of nature, and the joy of experimenting—whether that's with brush strokes or guitar strings.</p>
+                <a id="readmore" href="/about.html">Read more about April >></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footertext">
+            <p>© <span id="currentyear"></span> April Cleaver | Washington, USA </p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+        <div class="social">
+            <a href="https://instagram.com/ape.draws"><img src="images/insta-icon.svg" alt="instagram icon"></a>
+            <a href="https://www.linkedin.com/in/aprcleaver/"><img src="images/linkedin-icon.svg" alt="linkedin icon"></a>
+        </div>
+    </footer>
+</body>
+</html>

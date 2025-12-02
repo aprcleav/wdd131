@@ -1,0 +1,221 @@
+/* I ended up making some changes to my color scheme, so it is different from my siteplan. */
+
+:root {
+    --yellow-color: #FFE66D;
+    --pink-color: #FF6B6B;
+    --blue-color: #4ECDC4;
+    --darkest-color: #292F36;
+    --lightest-color: #F7FFF7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+    font-family: "Poppins", Arial, sans-serif;
+    color: var(--darkest-color);
+}
+
+/* ----- HEADER ----- */
+header,
+footer {
+    background-color: var(--darkest-color);
+    padding: 1rem;
+    color: var(--lightest-color);
+}
+
+header img {
+    max-width: 80px;
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: .7fr 2fr .6fr;
+    align-items: center;
+}
+
+header h1 {
+    text-align: center;
+    color: var(--lightest-color);
+    font-size: 25px;
+}
+
+/* Navigation Menu */
+#menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background: var(--darkest-color);
+    position: absolute;
+    top: 17px;
+    right: 25px;
+    font-size: 4rem;
+
+}
+
+#menu::before {
+    content: "≡";
+    color: var(--lightest-color);
+}
+
+nav {
+    padding: 0;
+    grid-column: -1/1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    display: none;
+}
+
+.open li {
+    display: block;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--lightest-color);
+}
+
+nav a:hover {
+    background: var(--pink-color);
+    color: var(--lightest-color);
+}
+
+#menu.open::before {
+    content: "⨉";
+    color: var(--lightest-color);
+}
+
+/* ----- MAIN ----- */
+img {
+    width: 100%;
+    height: auto;
+}
+
+.cta {
+    background-color: var(--yellow-color);
+    padding: 1.5rem 1.5rem 2.5rem;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.cta h2 {
+    font-family: "Noto Serif", Georgia, Times, serif;
+    padding: 0 2rem;
+}
+
+.citation {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#explore {
+    padding: 1rem;
+    border: none;
+    background-color: var(--darkest-color);
+    color: var(--lightest-color);
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+#explore:hover {
+    background-color: var(--blue-color);
+    color: var(--darkest-color);
+    font-weight: 800;
+}
+
+.shortbio p {
+    padding: 1.5rem 2rem;
+}
+
+#readmore {
+    padding: 2rem;
+    color: var(--darkest-color);
+}
+
+#readmore:hover {
+    color: var(--pink-color);
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-size: 14px;
+    margin-top: 2rem;
+}
+
+footer img {
+    max-width: 60px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* ----- PORTFOLIO PAGE ----- */
+
+.submenu {
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--yellow-color);
+}
+
+.submenu a {
+    color: var(--darkest-color);
+    padding: 0 1rem;
+    text-decoration:none;
+}
+
+.submenu a:hover {
+    font-weight: bolder;
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    grid-gap: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+    
+.art-grid img {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 15px;
+}
+
+.art-grid section {
+    box-shadow: 0px 0px 10px rgb(206, 206, 206);
+    border-radius: 10px;
+}
+
+.art-grid section p {
+    text-align: center;
+    padding: 0 1rem 1rem;
+}
