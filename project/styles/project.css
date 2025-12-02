@@ -149,6 +149,7 @@ img {
     background-color: var(--blue-color);
     color: var(--darkest-color);
     font-weight: 800;
+    transition: .5s ease;
 }
 
 .shortbio p {
