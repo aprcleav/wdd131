@@ -55,4 +55,21 @@
     padding: 1rem .5rem 0 1.5rem;
    }
 
+   /* ---- ABOUT PAGE ----- */
+   .aboutpage {
+    grid-template-columns: 1fr 1fr;
+   }
+
+   .about, .aboutpage .hero {
+    grid-column: 1/-1;
+   }
+
+   .aboutpage img {
+       padding: 0;
+   }
+
+   .column img {
+    padding: .5rem 2rem;
+   }
+
 }

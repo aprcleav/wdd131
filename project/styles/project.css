@@ -160,7 +160,7 @@ img {
     color: var(--darkest-color);
 }
 
-#readmore:hover {
+#readmore:hover, .attribution a:hover {
     color: var(--pink-color);
 }
 
@@ -185,7 +185,7 @@ footer img {
 
 .submenu {
     list-style: none;
-    padding: 1rem;
+    padding: 1.3rem;
     display: flex;
     justify-content: center;
     background-color: var(--yellow-color);
@@ -228,12 +228,16 @@ footer img {
 
 /* ----- CONTACT PAGE ----- */
 .heading {
-    padding: 1rem;
     text-align: center;
+}
+
+.heading p {
+    padding: 1rem 0 0 0;
 }
 
 .heading h2 {
     padding: 1rem 0;
+    background-color: var(--yellow-color);
 }
 
 form {
@@ -241,9 +245,7 @@ form {
     margin: 0 auto;
     max-width: 450px;
     align-items: center;
-    background-color: var(--lightest-color);
     padding: 1rem;
-    border: solid 1px var(--darkest-color);
 }
 
 fieldset {
@@ -293,7 +295,7 @@ textarea {
 
 .required {
     font-size: 1.3rem;
-    color: var(--pink-color);
+    color: rgb(189, 8, 38);
     font-weight: bold;
 }
 
@@ -314,4 +316,39 @@ textarea {
 
 .success {
     margin-bottom: 200px;
+}
+
+.success p {
+    padding: 1rem;
+}
+
+/* ----- ABOUT PAGE ----- */
+
+.about {
+    background-color: var(--yellow-color);
+    width: 100%;
+    padding: 1rem;
+}
+
+.aboutpage {
+    display: grid;
+    place-items: center;
+}
+
+.aboutpage p {
+    padding: 1rem 2rem;
+}
+
+.column .attribution {
+    font-style: italic;
+    font-size: 14px;
+    padding: 1rem 2rem;
+}
+
+.attribution a {
+    color: var(--darkest-color);
+}
+
+.aboutpage img {
+    padding: .5rem 2rem;
 }

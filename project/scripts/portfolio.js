@@ -36,7 +36,7 @@ const artworks = [
         image: "images/art3.webp"
     },
     {
-        name: "Florals",
+        name: "Favorite Florals",
         style: "whimsical",
         image: "images/art5.webp"
     },
@@ -51,7 +51,7 @@ const artworks = [
         image: "images/art1.webp"
     },
     {
-        name: "The Joy in Motherhood Comes in Moments",
+        name: "The Joy in Motherhood",
         style: "realistic",
         image: "images/art9.webp"
     },

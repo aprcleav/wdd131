@@ -13,7 +13,7 @@ let messages = Number(localStorage.getItem("messages-sent")) || 0;
 
 if (messages !== 0) {
     let numMessages = messages + 1; // add one to make the displayed amount match the amount in localstorage
-    messageSent.innerHTML = `<br>You've sent ${numMessages} messages to April. She will reply as soon as she is able to. <br>Thank you for your patience!`;
+    messageSent.innerHTML = `You've sent ${numMessages} messages to April. She will reply as soon as she is able to. <br><br>Thank you for your patience!`;
 }
 else {
     messageSent.textContent = `Thank you!`;
