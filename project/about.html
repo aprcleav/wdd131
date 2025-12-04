@@ -40,8 +40,17 @@
             <br><br>
         Her sketchbook is filled with pencil and ink drawings—raw, spontaneous, and full of character—but her finished pieces come to life digitally on her iPad. Blending traditional foundations with modern tools, she creates work that feels both timeless and fresh.
         </p>
-        <img src="images/april-cleaver.webp" alt="April Cleaver">
-        <img class="ipad" src="images/ipad.webp" alt="Artist drawing on an ipad" fetchpriority="high">
+        <picture>
+            <source media="(min-width: 900px)" srcset="images/april-cleaver.webp">
+            <source media="(min-width: 700px)" srcset="images/ac-portrait.webp">
+            <source media="(min-width: 500px)" srcset="images/april-cleaver.webp">
+            <img src="images/april-cleaver.webp" alt="April Cleaver">
+        </picture>
+        <picture>
+            <source media="(min-width: 900px)" srcset="images/ipad.webp">
+            <source media="(min-width: 700px)" srcset="images/ipad-long.webp">
+            <img src="images/ipad.webp" alt="Woman drawing on an ipad" fetchpriority="high">
+        </picture>
         <div class="column">
             <p>During her college years, April met her husband, and together they began building a family. Now the proud mom of three sons, she finds inspiration in the joy, chaos, and love that fill her everyday life. When she's not drawing, she's hiking evergreen trails, laughing with her family, or strumming her guitar (still learning, but enjoying the process).</p>
             <img class="kind" src="images/about-art.webp" alt="Various illustrations stacked on a table" loading="lazy">
