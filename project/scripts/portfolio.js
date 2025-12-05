@@ -61,12 +61,12 @@ const artworks = [
         image: "images/art10.webp"
     },
     {
-        name: "Jack The Chef",
+        name: "Jack the Chef",
         style: "realistic",
         image: "images/art12.webp"
     },
     {
-        name: "Todd The Fisherman",
+        name: "Todd the Fisherman",
         style: "realistic",
         image: "images/art13.webp"
     }
